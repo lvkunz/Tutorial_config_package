@@ -1,0 +1,25 @@
+
+#TODO: here you need to add your own parameters for the simulation and their values
+## you can add comments after them to explain what they do and the units p.ex
+
+dt: 10 #hours
+endtime: 1000 #hours
+seed: 0                                 #seed for random number generator. -1 for random seed
+
+#Initialisation
+initial_number_tumor_cells: 100000        #initial total number of tumor cells
+
+# Parameters for the simulation
+macro_steps: 1.0                        #number of macro steps per hour for vasculature growth
+micro_steps: 1                          #number of micro steps per macro step for vasculature growth
+weight_direction: 3.0                   #weight of direction for vasculature growth
+weight_vegf: 0.9                        #weight of VEGF gradient for vasculature growth
+
+# Graphics parameters
+show_time_steps: True                   #if True, show the time during the simulation
+verbose: True
+
+#example
+example: 42
+
+
